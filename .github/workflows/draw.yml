@@ -14,5 +14,5 @@ jobs:
       contents: write
     with:
       commit_message: "[Draw] ${{ github.event.head_commit.message }}"
-      destination: "commit"
+      destination: "PR"
       fail_on_error: ${{ fromJSON(true) }}
