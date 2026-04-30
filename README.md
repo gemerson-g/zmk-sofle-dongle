@@ -63,6 +63,3 @@ Important note from the official docs: once you start managing the keymap via ZM
 
 - 2024/12/21: Added support for ZMK Studio (refresh the left-hand firmware per original note).
 - 2024/10/24: Reduced power consumption; fixed RGB power auto shut-off.
-
-<img src="keymap-drawer/eyelash_sofle.svg" >
-
