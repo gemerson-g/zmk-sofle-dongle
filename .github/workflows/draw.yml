@@ -12,7 +12,8 @@ jobs:
     uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
     permissions:
       contents: write
+      pull-requests: write
     with:
       commit_message: "[Draw] ${{ github.event.head_commit.message }}"
-      destination: "PR"
+      destination: "artifact"
       fail_on_error: ${{ fromJSON(true) }}
