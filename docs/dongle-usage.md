@@ -68,7 +68,7 @@ Connect the **dongle** via USB and follow the [ZMK Studio guide](zmk-studio.md).
 
 In direct mode the **left half** connects to your computer via USB or Bluetooth and acts as the central device. The right half connects wirelessly to the left half. The dongle is not used.
 
-**Your keymap is fully reusable** — you will copy it as-is into the new config file.
+**Your keymap is fully reusable** - you will copy it as-is into the new config file.
 
 ---
 
@@ -83,7 +83,7 @@ In direct mode the **left half** connects to your computer via USB or Bluetooth 
 
 ---
 
-### Step 1 — Create `boards/shields/eyelash_sofle/eyelash_sofle_left.overlay`
+### Step 1 - Create `boards/shields/eyelash_sofle/eyelash_sofle_left.overlay`
 
 This defines the GPIO pins for the left half. Copy this exactly:
 
@@ -124,7 +124,7 @@ nice_view_spi: &spi0 {
 
 ---
 
-### Step 2 — Create `boards/shields/eyelash_sofle/eyelash_sofle_right.overlay`
+### Step 2 - Create `boards/shields/eyelash_sofle/eyelash_sofle_right.overlay`
 
 Same idea for the right half:
 
@@ -166,7 +166,7 @@ nice_view_spi: &spi0 {
 
 ---
 
-### Step 3 — Create `boards/shields/eyelash_sofle/eyelash_sofle_left.conf`
+### Step 3 - Create `boards/shields/eyelash_sofle/eyelash_sofle_left.conf`
 
 This enables features for the left half (central). Only 1 peripheral now (right half), not 2 like in dongle mode:
 
@@ -202,13 +202,13 @@ CONFIG_ZMK_RGB_UNDERGLOW_EFF_START=3
 
 ---
 
-### Step 4 — Create `boards/shields/eyelash_sofle/eyelash_sofle_right.conf`
+### Step 4 - Create `boards/shields/eyelash_sofle/eyelash_sofle_right.conf`
 
 The right half config is unchanged from dongle mode. Create this file with the same content as `eyelash_sofle_peripheral_right.conf`.
 
 ---
 
-### Step 5 — Update `boards/shields/eyelash_sofle/Kconfig.shield`
+### Step 5 - Update `boards/shields/eyelash_sofle/Kconfig.shield`
 
 Add two lines at the bottom to register the new shield names:
 
@@ -222,7 +222,7 @@ config SHIELD_EYELASH_SOFLE_RIGHT
 
 ---
 
-### Step 6 — Update `boards/shields/eyelash_sofle/Kconfig.defconfig`
+### Step 6 - Update `boards/shields/eyelash_sofle/Kconfig.defconfig`
 
 Add this block at the end of the file. It tells ZMK that `eyelash_sofle_left` is the central device and enables split mode for both halves:
 
@@ -257,13 +257,13 @@ endif
 
 ---
 
-### Step 7 — Copy your keymap
+### Step 7 - Copy your keymap
 
-Create `config/eyelash_sofle_left.keymap` by copying the full content of your current `config/eyelash_sofle_central_dongle.keymap`. Nothing inside needs to change — the layers, bindings, and behaviors are identical.
+Create `config/eyelash_sofle_left.keymap` by copying the full content of your current `config/eyelash_sofle_central_dongle.keymap`. Nothing inside needs to change - the layers, bindings, and behaviors are identical.
 
 ---
 
-### Step 8 — Create `config/eyelash_sofle_left.conf`
+### Step 8 - Create `config/eyelash_sofle_left.conf`
 
 Create this file based on your current `config/eyelash_sofle_central_dongle.conf`, removing the dongle display lines:
 
@@ -287,7 +287,7 @@ CONFIG_ZMK_KSCAN_DEBOUNCE_RELEASE_MS=8
 
 ---
 
-### Step 9 — Update `build.yaml`
+### Step 9 - Update `build.yaml`
 
 Replace the current dongle entries with the new ones (keep `settings_reset`):
 
@@ -308,7 +308,7 @@ include:
 
 ---
 
-### Step 10 — Build and flash
+### Step 10 - Build and flash
 
 1. Commit your changes. GitHub Actions will build the firmware automatically.
 2. Download the artifact from the Actions run.
