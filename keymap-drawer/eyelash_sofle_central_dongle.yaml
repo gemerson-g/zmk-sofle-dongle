@@ -91,7 +91,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - END
   - {t: '-', s: _}
-  - '"'
+  - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - (
   - )
@@ -103,20 +103,20 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - +
+  - '&'
   - {t: '''', s: '"'}
   - {t: '$$mdi:transfer$$', type: trans}
   - '~'
   - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '=', s: +}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - $$mdi:backspace-reverse-outline$$
   - Ins
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: \, s: '|'}
   - '|'
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
