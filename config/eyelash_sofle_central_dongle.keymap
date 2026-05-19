@@ -86,9 +86,9 @@
         layer_1 {
             bindings = <
 &kp GRAVE  &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &mmv MOVE_UP    &kp F6     &kp F7    &kp F8     &kp F9    &kp F10   &kp F11
-&kp F12    &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT &mmv MOVE_DOWN  &kp PG_UP  &kp HOME  &kp UP     &kp END   &kp MINUS &kp DQT
-&trans     &kp LPAR  &kp RPAR  &kp LT    &kp GT    &kp UNDER &mmv MOVE_LEFT  &kp PG_DN  &kp LEFT  &kp DOWN   &kp RIGHT &kp PLUS  &kp SQT
-&trans     &kp TILDE &kp GRAVE &trans    &trans    &kp EQUAL &mmv MOVE_RIGHT &kp DELETE &kp INSERT &kp BSLH  &kp PIPE  &trans    &trans
+&kp F12    &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT &mmv MOVE_DOWN  &kp PG_UP  &kp HOME  &kp UP     &kp END   &kp MINUS &kp EQUAL
+&trans     &kp LPAR  &kp RPAR  &kp LT    &kp GT    &kp UNDER &mmv MOVE_LEFT  &kp PG_DN  &kp LEFT  &kp DOWN   &kp RIGHT &kp AMPS  &kp SQT
+&trans     &kp TILDE &kp GRAVE &trans    &trans    &trans    &mmv MOVE_RIGHT &kp DELETE &kp INSERT &trans     &kp BSLH  &kp PIPE  &trans
 &kp C_MUTE &trans    &trans    &trans    &trans    &trans    &mkp LCLK       &trans     &trans    &trans     &trans    &trans
             >;
 
