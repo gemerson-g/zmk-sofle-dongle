@@ -11,10 +11,9 @@ manifest:
   projects:
     # Mario walking animation for OLED peripheral displays (nice_view_custom shield)
     # Repo: https://github.com/GPeye/mario-peripheral-animation
-    # Uncomment and use 'nice_view_custom' shield in build.yaml to enable
-    # - name: mario-peripheral-animation
-    #   remote: gpeye
-    #   revision: main
+    - name: mario-peripheral-animation
+      remote: gpeye
+      revision: main
 
     - name: zmk
       remote: zmkfirmware
