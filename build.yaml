@@ -11,3 +11,9 @@ include:
     shield: eyelash_sofle_peripheral_right nice_view_zelda
   - board: nice_nano_v2
     shield: settings_reset
+
+  # Non-dongle mode (shields not yet implemented — eyelash_sofle_left/right need Kconfig entries)
+  # - board: nice_nano_v2
+  #   shield: eyelash_sofle_left
+  # - board: nice_nano_v2
+  #   shield: eyelash_sofle_right nice_view_zelda
