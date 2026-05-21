@@ -37,17 +37,18 @@
 
         // -----------------------------------------------------------------------------------------
         // Layer 1 - Sym + Nav  (hold mo1 - left thumb)
-        // Left  : symbols  |  F12 on row1 col0
+        // Left  : symbols
         // Right : nav cluster  |  F1-F8 on top row  |  [ ] DELETE on top row pinky cols
-        //         F9-F11 on pinky col rows 1-3  |  =/'/\| on col4
+        //         outer col transparent → MINUS/RSHIFT/EQUAL pass through from base
+        // Thumb : F9-F12 on right thumb (mo3/SPACE/mo2/ENTER slots)
         // -----------------------------------------------------------------------------------------
         layer_1 {
             bindings = <
 &kp GRAVE  &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &trans  &kp F6     &kp F7     &kp F8     &kp LBKT  &kp RBKT  &kp DELETE
-&kp F12    &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT &trans  &kp PG_UP  &kp HOME   &kp UP     &kp END   &kp EQUAL &kp F9
-&trans     &kp LPAR  &kp RPAR  &kp LT    &kp GT    &kp UNDER &trans  &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT &kp SQT   &kp F10
-&trans     &kp TILDE &kp GRAVE &trans    &trans    &trans    &trans  &trans     &kp INSERT &trans     &kp BSLH  &kp PIPE  &kp F11
-&kp C_MUTE &trans    &trans    &trans    &trans    &trans    &trans  &trans     &trans     &trans     &trans    &trans
+&trans     &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT &trans  &kp PG_UP  &kp HOME   &kp UP     &kp END   &kp EQUAL &trans
+&trans     &kp LPAR  &kp RPAR  &kp LT    &kp GT    &kp UNDER &trans  &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT &kp SQT   &trans
+&trans     &kp TILDE &kp GRAVE &trans    &trans    &trans    &trans  &trans     &kp INSERT &trans     &kp BSLH  &kp PIPE  &trans
+&kp C_MUTE &trans    &trans    &trans    &trans    &trans    &trans  &kp F9     &kp F10    &kp F11    &kp F12   &trans
             >;
 
             display-name = "Sym+Nav";
