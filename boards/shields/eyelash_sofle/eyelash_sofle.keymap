@@ -28,7 +28,7 @@
 &kp TAB    &kp Q        &kp W        &kp E     &kp R   &kp T     &kp DOWN_ARROW  &kp Y     &kp U     &kp I     &kp O     &kp P           &kp MINUS
 &kp LSHFT  &kp A        &kp S        &kp D     &kp F   &kp G     &kp LEFT_ARROW  &kp H     &kp J     &kp K     &kp L     &kp SEMI        &kp RIGHT_SHIFT
 &kp CAPS   &kp Z        &kp X        &kp C     &kp V   &kp B     &kp RIGHT_ARROW &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH        &kp ENTER
-&kp C_MUTE &kp LEFT_GUI &kp LEFT_ALT &kp LCTRL &kp SPACE &mo 1    &kp ENTER       &mo 3     &kp SPACE &mo 2     &kp EQUAL       &kp RALT
+&kp C_MUTE &kp LCTRL &kp LEFT_GUI &kp LEFT_ALT &kp SPACE &mo 1    &kp ENTER       &mo 3     &kp SPACE &mo 2     &kp EQUAL       &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -39,15 +39,15 @@
         // Layer 1 - Sym + Nav  (hold mo1 - left thumb)
         // Left  : symbols
         // Right : nav cluster  |  F1-F8 on top row  |  [ ] DELETE on top row pinky cols
-        //         outer col: MINUS/ENTER pass through | home row = SQT
+        //         outer col transparent → MINUS/RSHIFT/ENTER pass through from base
         // Thumb : F9-F12 on right thumb (mo3/SPACE/mo2/ENTER slots)
         // -----------------------------------------------------------------------------------------
         layer_1 {
             bindings = <
 &kp GRAVE  &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &trans  &kp F6     &kp F7     &kp F8     &kp LBKT  &kp RBKT  &kp DELETE
 &trans     &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT &trans  &kp PG_UP  &kp HOME   &kp UP     &kp END   &kp EQUAL &trans
-&trans     &kp LPAR  &kp RPAR  &kp LT    &kp GT    &kp UNDER &trans  &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT &trans    &kp SQT
-&trans     &kp TILDE &kp GRAVE &trans    &trans    &trans    &trans  &trans     &kp INSERT &trans     &kp BSLH  &kp PIPE  &trans
+&trans     &kp LPAR  &kp RPAR  &kp LT    &kp GT    &kp UNDER &trans  &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT &kp SQT   &trans
+&trans     &kp TILDE &kp GRAVE &trans    &trans    &trans    &trans  &trans     &kp INSERT &trans     &kp PIPE  &kp BSLH  &trans
 &kp C_MUTE &trans    &trans    &trans    &trans    &trans    &trans  &kp F9     &kp F10    &kp F11    &kp F12   &trans
             >;
 
